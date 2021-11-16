@@ -1,11 +1,15 @@
 # Citron Inc
-Ceci est une page d'exemple qui sert de fil rouge à [mon tutoriel sur Sass & Compass](https://zestedesavoir.com/contenus/beta/672/reprenez-le-controle-de-vos-feuilles-de-style-avec-sass/) sur [Zeste de Savoir](https://zestedesavoir.com/).
 
-## Téléchargement
-Pour récupérer l'ensemble du projet (feuille de style, page HTML et images), cliquez sur “Download ZIP” dans la liste déroulante sur la page d’accueil du projet :
+Ceci est une page d'exemple qui sert de fil rouge à [au tutoriel sur Sass & Compass](https://zestedesavoir.com/contenus/beta/672/reprenez-le-controle-de-vos-feuilles-de-style-avec-sass/) sur [Zeste de Savoir](https://zestedesavoir.com/).
 
-![Download ZIP](https://user-images.githubusercontent.com/15378830/30023133-90fb3d8e-916e-11e7-8394-5c94b68fa803.png)
+## Auteurs principaux
 
+* [Abdelazer](https://zestedesavoir.com/membres/voir/Abdelazer/)
+* [Matouche](https://zestedesavoir.com/membres/voir/Matouche/)
+
+## Repo d'origine
+
+Ce repo est un fork de [Citron Inc par Matouche](https://github.com/Matouche/CitronInc).
 
 ## Source des images
 
@@ -19,3 +23,22 @@ Voici les sources des différentes images libres de droits utilisées dans l'exe
  - [Piment rouge](http://www.stockvault.net/photo/115248/red-chilli)
  - *Nosferatu le vampire*, F. W. Murnau (1922)
  - Mascotte Clem' par [MaxRoyo](http://maxroyo.com)
+
+## Setup
+
+```bash
+# Vérifie que git est bien installé
+git --version
+
+# Récupération du code source du projet
+git clone https://github.com/loic-yvonnet/CitronInc
+
+# On rentre dans le répertoire CitronInc
+cd CitronInc
+
+# Installe les dépendances et compile le projet
+bin/bootstrap.sh
+
+# Ecoute the modifications sur le fichier src/scss/main.scss
+bin/watch.sh
+```
