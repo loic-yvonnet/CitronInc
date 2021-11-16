@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Watch SCSS changes (only)
-npm run -s build
+npm run -s watch
