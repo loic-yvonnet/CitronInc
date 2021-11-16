@@ -1,0 +1,33 @@
+{
+  "name": "citroninc",
+  "version": "1.0.0",
+  "author": "Matouche",
+  "license": "MIT",
+  "keywords": [
+    "Sass",
+    "Exemple",
+    "Citron",
+    "Limonade"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matouche/CitronInc.git"
+  },
+  "description": "Ceci est une page d'exemple qui sert de fil rouge à [mon tutoriel sur Sass & Compass](https://zestedesavoir.com/contenus/beta/672/reprenez-le-controle-de-vos-feuilles-de-style-avec-sass/) sur [Zeste de Savoir](https://zestedesavoir.com/).",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run -s clean && npm run -s html && npm run -s images && npm run -s scss",
+    "html": "cpy src/*.html dist/",
+    "images": "cpy src/img/* dist/img/",
+    "scss": "sass src/scss/main.scss dist/css/site.css",
+    "watch": "sass --watch src/scss/main.scss dist/css/site.css"
+  },
+  "devDependencies": {
+    "cpy-cli": "^3.1.1",
+    "node-gyp": "^8.4.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.43.4"
+  }
+}
